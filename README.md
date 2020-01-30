@@ -1,0 +1,2 @@
+# activerecord-practice
+RailsのActiveRecordの練習や検証をするための環境です。
