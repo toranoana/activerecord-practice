@@ -1,0 +1,23 @@
+AllCops:
+  TargetRubyVersion: 2.6.5
+
+Rails:
+  Enabled: true
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
