@@ -6,7 +6,7 @@ This is how to use ActiveRecord and the environment to practice a method. A libr
 
 * Ruby 2.6.5
 
-* Rails 6.0
+* Rails 6.0.2
 
 ### DB
 
@@ -45,7 +45,27 @@ $ bundle install --path vendor/bundler
 
 # Introduction Procedure（導入手順）
 
-# Worldview（世界観）
+```sh
+bin/rails db:create
+bin/rails db:migrate
+bin/rails people:init_create_people_100000_from_1000
+bin/rails items:init_create_item_100000_from_1000
+bin/rails item_associate_person:all_associate
+```
+
+Now you can practice with ActiveRecord!
+
+If your development environment is Mac, change the following description.
+
+`config/database.yml`
+
+```diff
+  port: 3306
+  # MacOS環境で動かない場合は以下をコメントアウト
+-  socket: /var/run/mysqld/mysqld.sock
++  #socket: /var/run/mysqld/mysqld.sock
+
+```
 
 ## Copyright
 
